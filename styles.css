@@ -1,42 +1,38 @@
 body {
-	animation: gradientAnimation 10s ease infinite;
-	color: #ffffff;
+	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	margin: 20px;
+	animation: gradientAnimation 10s ease infinite;
 }
 
 #background-animation {
-	background-image: url('https://techcrunch.com/wp-content/uploads/2020/06/bluekai-tc-hero.gif?w=730&crop=1');
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	height: 100%;
-	left: 0;
 	position: fixed;
 	top: 0;
+	left: 0;
 	width: 100%;
+	height: 100%;
 	z-index: -1;
+	background: url('https://techcrunch.com/wp-content/uploads/2020/06/bluekai-tc-hero.gif?w=730&crop=1') no-repeat center/cover;
 }
 
 h1 {
-	color: #ffffff;
 	font-size: 36px;
 	font-weight: bold;
 	text-align: center;
 }
 
-h2 {
+h2,
+ul {
 	font-size: 24px;
 	font-weight: bold;
 }
 
 ul {
-	font-size: 18px;
-	font-weight: bold;
 	list-style-type: disc;
 }
 
-footer,
-header {
+header,
+footer {
 	text-align: center;
 }
 
@@ -47,14 +43,11 @@ table {
 
 thead {
 	background-color: #2a2b33;
-	color: #ffffff;
+	color: rgb(106, 196, 245);
 }
 
 thead th {
-	color: rgb(106, 196, 245);
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	font-style: bold;
+	font: bold 18px Arial, Helvetica, sans-serif;
 	text-align: left;
 }
 
@@ -67,18 +60,22 @@ tfoot {
 }
 
 footer {
-	color: #cccccc;
+	color: #ccc;
 	font-size: 14px;
+}
+
+button,
+.delete-btn {
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	padding: 5px 10px;
+	transition: background-color 0.3s ease;
 }
 
 button {
 	background-color: #4caf50;
-	border: none;
-	border-radius: 4px;
-	color: #ffffff;
-	cursor: pointer;
-	padding: 10px 20px;
-	transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -87,12 +84,6 @@ button:hover {
 
 .delete-btn {
 	background-color: #f44336;
-	border: none;
-	border-radius: 4px;
-	color: #ffffff;
-	cursor: pointer;
-	padding: 5px 10px;
-	transition: background-color 0.3s ease;
 }
 
 .delete-btn:hover {
@@ -111,8 +102,8 @@ table th {
 }
 
 #bill-form {
-	align-items: center;
 	display: grid;
+	align-items: center;
 	gap: 10px;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
@@ -121,12 +112,12 @@ table th {
 	justify-self: start;
 }
 
-animated {
+.animated,
+.pulse {
 	animation-duration: 1s;
 }
 
 .pulse {
-	animation-duration: 1s;
 	animation-iteration-count: infinite;
 	animation-name: pulse;
 }
