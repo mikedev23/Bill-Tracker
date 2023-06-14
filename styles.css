@@ -1,0 +1,146 @@
+body {
+	animation: gradientAnimation 10s ease infinite;
+	color: #ffffff;
+	font-family: 'Montserrat', sans-serif;
+	margin: 20px;
+}
+
+#background-animation {
+	background-image: url('https://techcrunch.com/wp-content/uploads/2020/06/bluekai-tc-hero.gif?w=730&crop=1');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+h1 {
+	color: #ffffff;
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+ul {
+	font-size: 18px;
+	font-weight: bold;
+	list-style-type: disc;
+}
+
+footer,
+header {
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+thead {
+	background-color: #2a2b33;
+	color: #ffffff;
+}
+
+thead th {
+	color: rgb(106, 196, 245);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: bold;
+	text-align: left;
+}
+
+tbody tr:nth-child(even) {
+	background-color: #3b3e4a;
+}
+
+tfoot {
+	font-weight: bold;
+}
+
+footer {
+	color: #cccccc;
+	font-size: 14px;
+}
+
+button {
+	background-color: #4caf50;
+	border: none;
+	border-radius: 4px;
+	color: #ffffff;
+	cursor: pointer;
+	padding: 10px 20px;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #45a049;
+}
+
+.delete-btn {
+	background-color: #f44336;
+	border: none;
+	border-radius: 4px;
+	color: #ffffff;
+	cursor: pointer;
+	padding: 5px 10px;
+	transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+	background-color: #d32f2f;
+}
+
+form label,
+table td,
+table th {
+	padding: 5px;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+#bill-form {
+	align-items: center;
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+#bill-form button {
+	justify-self: start;
+}
+
+animated {
+	animation-duration: 1s;
+}
+
+.pulse {
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-name: pulse;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
