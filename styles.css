@@ -135,3 +135,12 @@ table th {
 		transform: scale(1);
 	}
 }
+
+#bill-table th:nth-child(3) {
+	text-align: right;
+	width: 100px;
+}
+
+.delete-btn {
+	float: right;
+}
