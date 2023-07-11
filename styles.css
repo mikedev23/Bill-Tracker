@@ -110,7 +110,7 @@ table th {
 #bill-form .form-group {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: space-around;
   padding-bottom: 10px;
 }
 
