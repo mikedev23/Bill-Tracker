@@ -134,12 +134,12 @@ table th {
 }
 
 #bill-form button {
-  justify-content: center;
+  justify-self: centeer;
 }
 
 .animated,
 .pulse {
-  animation-duration: 1.3s;
+  animation-duration: 1s;
 }
 
 .pulse {
