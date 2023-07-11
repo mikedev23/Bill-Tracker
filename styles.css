@@ -161,16 +161,6 @@ table th {
 }
 
 /* Media Queries */
-@media (max-width: 1024px) {
-  #bill-form {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  }
-
-  #bill-form .form-group label {
-    flex-basis: 100px;
-  }
-}
-
 @media (max-width: 768px) {
   body {
     margin: 10px;
@@ -186,12 +176,8 @@ table th {
     font-size: 18px;
   }
 
-  #bill-form {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-
   #bill-form .form-group label {
-    flex-basis: 90px;
+    flex-basis: 100px;
   }
 
   #bill-form input {
@@ -204,15 +190,5 @@ table th {
 
   #bill-table th:nth-child(3) {
     width: 60px;
-  }
-}
-
-@media (max-width: 480px) {
-  #bill-form {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-
-  #bill-form .form-group label {
-    flex-basis: 80px;
   }
 }
