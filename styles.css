@@ -107,3 +107,27 @@ th {
   background-color: #c82333;
   transition: background-color 0.2s ease-in-out;
 }
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 80%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  input[type='text'],
+  input[type='number'] {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
