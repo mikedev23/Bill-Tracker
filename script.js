@@ -38,3 +38,25 @@ billTable.addEventListener('click', function (event) {
     row.remove()
   }
 })
+
+const billTotalDiv = document.getElementById('bill-total')
+
+function updateTotal () {
+  const billAmounts = Array.from(
+    document.querySelectorAll('.bill-item td:nth-child(2)')
+  ).map(item => parseFloat(item.innerText.replace('$', '')))
+
+  const totalAmount = billAmounts.reduce((acc, curr) => acc + curr, 0)
+  billTotalDiv.innerText = `Total: $${totalAmount.toFixed(2)}`
+}
+
+// Call updateTotal whenever a bill is added or removed
+billForm.addEventListener('submit', function (event) {
+  updateTotal()
+})
+
+billTable.addEventListener('click', function (event) {
+  if (event.target.classList.contains('delete-btn')) {
+    updateTotal()
+  }
+})
