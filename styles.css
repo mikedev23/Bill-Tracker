@@ -1,5 +1,5 @@
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Delius', cursive;
   margin: 0;
   padding: 0;
   background: url('images/bluekai-hero.gif') no-repeat center/cover;
@@ -29,18 +29,19 @@ header {
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Merienda', cursive;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 46px;
   text-align: center;
-  color: white;
+  color: #fff;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
   font-size: 20px;
   margin-top: 0;
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Montserrat', cursive;
 }
 
 #bill-amount {
@@ -61,9 +62,9 @@ form {
 
 label {
   font-weight: bold;
+  font-size: larger;
   display: block;
   margin-bottom: 5px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 input[type='text'],
@@ -76,6 +77,7 @@ input[type='number'] {
   background-color: #2e353f;
   color: #ddd;
   font-size: 16px;
+  letter-spacing: 0.7px;
 }
 
 .bill-item {
@@ -84,7 +86,7 @@ input[type='number'] {
 
 #bill-total {
   font-weight: bold;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: inherit;
   font-size: larger;
 }
 
@@ -126,7 +128,7 @@ td {
 }
 
 th {
-  background-color: #007bff;
+  background-color: #0472e7;
   color: #ddd;
 }
 
@@ -151,6 +153,16 @@ th {
   margin-top: 30px;
 }
 
+body,
+p,
+label,
+input,
+button,
+th,
+td {
+  font-family: 'Delius', cursive;
+}
+
 /* Add a new animation class */
 @keyframes fade-in {
   from {
@@ -165,6 +177,10 @@ th {
 @media screen and (max-width: 768px) {
   .container {
     max-width: 80%;
+  }
+
+  header {
+    max-width: 100%;
   }
 
   h1 {
