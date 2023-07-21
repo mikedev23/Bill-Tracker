@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <title>Monthly Bill Tracker</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Include the Merienda font -->
-    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Include the Delius font -->
-    <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Merienda:wght@400;700&family=Delius&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -22,22 +20,28 @@
       <form id="bill-form">
         <div class="form-group">
           <label for="bill-name">Bill Name:</label>
-          <input type="text" id="bill-name" pattern="[a-zA-Z0-9\s]+" required>
+          <input type="text" id="bill-name" pattern="[a-zA-Z0-9\s]+" required />
         </div>
         <div class="form-group">
           <label for="bill-amount">Bill Amount:</label>
-          <input type="number" id="bill-amount" min="0.01" step="0.01" required>
+          <input
+            type="number"
+            id="bill-amount"
+            min="0.01"
+            step="0.01"
+            required
+          />
         </div>
         <div class="form-group">
           <label for="bill-date">Due Date:</label>
-          <input type="date" id="bill-date" required>
+          <input type="date" id="bill-date" required />
         </div>
         <button type="submit" class="animated pulse">Add Bill</button>
       </form>
     </section>
     <section class="container">
       <h2>Monthly Bills</h2>
-      <input type="text" id="filter-input" placeholder="Filter bills">
+      <input type="text" id="filter-input" placeholder="Filter bills" />
       <table id="bill-table">
         <thead>
           <tr>
@@ -84,5 +88,4 @@
     </footer>
     <script src="script.js"></script>
   </body>
-
 </html>

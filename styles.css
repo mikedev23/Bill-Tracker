@@ -30,12 +30,13 @@ header {
 }
 
 h1 {
-  font-family: 'Merienda', cursive;
+  font-family: Delius, cursive;
   font-weight: bold;
   font-size: 46px;
   text-align: center;
   color: #fff;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke: #2e353f;
 }
 
 h2 {
