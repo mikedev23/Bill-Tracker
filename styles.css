@@ -122,7 +122,7 @@ th,
 td {
   padding: 8px;
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: inherit;
   font-size: large;
   font-weight: bold;
 }
@@ -161,6 +161,25 @@ button,
 th,
 td {
   font-family: 'Delius', cursive;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2e353f;
+  padding: 18px;
+  color: #ddd;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Add a new animation class */
