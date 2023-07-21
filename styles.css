@@ -43,6 +43,18 @@ h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#bill-amount {
+  margin-bottom: 15px;
+}
+
+#bill-date {
+  background-color: #2e353f;
+  color: #ddd;
+  margin-bottom: 8px;
+  padding: 10px;
+  font-size: 14px;
+}
+
 form {
   margin-bottom: 20px;
 }

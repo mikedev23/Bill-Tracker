@@ -18,22 +18,28 @@
       <form id="bill-form">
         <div class="form-group">
           <label for="bill-name">Bill Name:</label>
-          <input type="text" id="bill-name" required>
+          <input type="text" id="bill-name" pattern="[a-zA-Z0-9\s]+" required>
         </div>
         <div class="form-group">
           <label for="bill-amount">Bill Amount:</label>
-          <input type="number" id="bill-amount" required>
+          <input type="number" id="bill-amount" min="0.01" step="0.01" required>
+        </div>
+        <div class="form-group">
+          <label for="bill-date">Due Date:</label>
+          <input type="date" id="bill-date" required>
         </div>
         <button type="submit" class="animated pulse">Add Bill</button>
       </form>
     </section>
     <section class="container">
       <h2>Monthly Bills</h2>
+      <input type="text" id="filter-input" placeholder="Filter bills">
       <table id="bill-table">
         <thead>
           <tr>
             <th>Bill Name</th>
             <th>Amount</th>
+            <th>Due Date</th>
             <th>Action</th>
           </tr>
         </thead>
@@ -41,6 +47,7 @@
           <tr class="bill-item">
             <td>Electricity Bill</td>
             <td>$150</td>
+            <td>July 31, 2023</td>
             <td>
               <button class="delete-btn">Delete</button>
             </td>
@@ -48,6 +55,7 @@
           <tr class="bill-item">
             <td>Internet Bill</td>
             <td>$80</td>
+            <td>August 5, 2023</td>
             <td>
               <button class="delete-btn">Delete</button>
             </td>
@@ -55,6 +63,7 @@
           <tr class="bill-item">
             <td>Water Bill</td>
             <td>$50</td>
+            <td>July 28, 2023</td>
             <td>
               <button class="delete-btn">Delete</button>
             </td>
