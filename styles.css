@@ -25,7 +25,6 @@ header {
   border-radius: 5px;
   background-color: #8d8c8c;
   max-width: 650px;
-  max-height: 500px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -165,7 +164,6 @@ td {
   font-family: 'Delius', cursive;
 }
 
-/* Footer Styles */
 footer {
   background-color: #2e353f;
   padding: 18px;
@@ -184,7 +182,6 @@ footer a {
   text-decoration: none;
 }
 
-/* Add a new animation class */
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -194,7 +191,6 @@ footer a {
   }
 }
 
-/* Media Queries for Responsiveness */
 @media screen and (max-width: 768px) {
   .container {
     max-width: 80%;
@@ -219,5 +215,9 @@ footer a {
 
   button {
     font-size: 14px;
+  }
+
+  td {
+    font-size: 13px;
   }
 }
