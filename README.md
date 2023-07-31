@@ -56,7 +56,7 @@ I hope that you find this webpage informative and helpful. If you have any quest
 
 [![Reddit](https://img.shields.io/badge/Reddit-mikedev23-gold?style=flat&logo=reddit)](https://www.reddit.com/user/mikedev23)
 
-[![GitHub](https://img.shields.io/badge/GitHub-mikedev23-black?style=flat&logo=github)](https://github.com/mikedev23)
+[![GitHub](https://img.shields.io/badge/GitHub-mikedev23-darkgreen?style=flat&logo=github)](https://github.com/mikedev23)
 
 [![Email](https://img.shields.io/badge/Email-michaelh1277%40gmail.com-red?style=flat&logo=gmail)](mailto:michaelh1277@gmail.com)
 
